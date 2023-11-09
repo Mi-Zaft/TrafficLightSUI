@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var nextButtonText = "Start"
-    @State private var activeColor: String?
+    @State private var activeColor: CurrentLight?
     
     var body: some View {
         ZStack {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
-                CircleView(color: .red, opacity: activeColor == "red" ? 1 : 0.3)
-                CircleView(color: .yellow, opacity: activeColor == "yellow" ? 1 : 0.3)
-                CircleView(color: .green, opacity: activeColor == "green" ? 1 : 0.3)
+                CircleView(color: .red, opacity: activeColor == .red ? 1 : 0.3)
+                CircleView(color: .yellow, opacity: activeColor == .yellow ? 1 : 0.3)
+                CircleView(color: .green, opacity: activeColor == .green ? 1 : 0.3)
                 Spacer()
                 Button(action: nextButtonDidTapped) {
                     ZStack {
@@ -34,17 +34,21 @@ struct ContentView: View {
     }
     
     private func nextButtonDidTapped() {
-        if (activeColor != nil) {
+        if (activeColor == nil) {
             nextButtonText = "Next"
         }
         switch activeColor {
-        case "red":
-            activeColor = "yellow"
-        case "yellow":
-            activeColor = "green"
+        case .red:
+            activeColor = .yellow
+        case .yellow:
+            activeColor = .green
         default:
-            activeColor = "red"
+            activeColor = .red
         }
+    }
+    
+    private enum CurrentLight {
+        case red, yellow, green
     }
 }
 
