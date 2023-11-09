@@ -11,6 +11,7 @@
 		9417C7A42AFC59B300D801DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9417C7A32AFC59B300D801DF /* ContentView.swift */; };
 		9417C7A62AFC59B500D801DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9417C7A52AFC59B500D801DF /* Assets.xcassets */; };
 		9417C7A92AFC59B500D801DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9417C7A82AFC59B500D801DF /* Preview Assets.xcassets */; };
+		94BD11062AFC5E8400DB9D59 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BD11052AFC5E8400DB9D59 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9417C7A32AFC59B300D801DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9417C7A52AFC59B500D801DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9417C7A82AFC59B500D801DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94BD11052AFC5E8400DB9D59 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				9417C7A12AFC59B300D801DF /* TrafficLightSUIApp.swift */,
 				9417C7A32AFC59B300D801DF /* ContentView.swift */,
+				94BD11052AFC5E8400DB9D59 /* CircleView.swift */,
 				9417C7A52AFC59B500D801DF /* Assets.xcassets */,
 				9417C7A72AFC59B500D801DF /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BD11062AFC5E8400DB9D59 /* CircleView.swift in Sources */,
 				9417C7A42AFC59B300D801DF /* ContentView.swift in Sources */,
 				9417C7A22AFC59B300D801DF /* TrafficLightSUIApp.swift in Sources */,
 			);
